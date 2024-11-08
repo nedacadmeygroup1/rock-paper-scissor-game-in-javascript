@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object practice</title>
+</head>
+<body>
+    <script>
+        const info= {
+            name: 'fatima',
+            contact: '22230986',
+            address: {
+                street:'abc scheme',
+                city: 'karachi',
+                postalCode: '79790',
+                location: {
+                    latitude: '123',
+                    longtitude: '5678',
+                  }
+            }
+        };
+
+        console.log(info);
+        let json= JSON.stringify(info);
+        console.log(typeof json);
+        console.log(json);
+
+        let obj= JSON.parse(json);
+        console.log(typeof obj);
+        console.log(obj);
+
+       
+    </script>
+</body>
+</html>
